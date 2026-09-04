@@ -13,7 +13,7 @@ class Solution:
             else:
                 sf[i]=1
         
-        print(sf)
+        # print(sf)
         res=[0 for i in range(n)]
         inc=False
         if ratings[0]==ratings[1]:
@@ -45,6 +45,6 @@ class Solution:
             else:
                 res[i]=res[i-1]-1
 
-        print(res)
+        # print(res)
         return sum(res)
             
