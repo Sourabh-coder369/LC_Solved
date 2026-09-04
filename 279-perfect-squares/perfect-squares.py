@@ -8,7 +8,10 @@ class Solution:
         dp[0]=0
         for i in range(len(perfectsq)):
             for j in range(n+1):
-                if dp[j]>-1 and j+perfectsq[i]<=n:
+                if j+perfectsq[i]>n:
+                    break
+
+                if dp[j]>-1:
                     if dp[j+perfectsq[i]]==-1:
                         dp[j+perfectsq[i]]=dp[j]+1
                     else:
