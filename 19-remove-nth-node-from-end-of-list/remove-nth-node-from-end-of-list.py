@@ -26,11 +26,9 @@ class Solution:
             cnt1+=1
 
         temp=dummy.next
-        if(not prev and not temp):
-            return None
-
         if(cnt1==1):
             return head.next
+
         if(prev):
             prev.next=temp
 
