@@ -12,7 +12,7 @@ public:
             }
         }
         parts++;
-        cout<<parts<<" "<<maxsum<<endl;
+        // cout<<parts<<" "<<maxsum<<endl;
         return parts<=k ? true:false;
     }
 
