@@ -7,7 +7,6 @@ class Solution:
             return s
 
         n=len(nums)
-        nums.sort()
         nums1=[num for num in nums]
         nums1=list(set(nums1))
         nums1.sort()
